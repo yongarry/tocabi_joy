@@ -1,0 +1,20 @@
+<library path="libtocabi_joy">
+  <class name="tocabi_joy/TocabiJoy" type="tocabi_joy::TocabiJoy" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      An tocabi joy Python GUI plugin to create a great user interface.
+    </description>
+    <qtgui>
+      <group>
+        <label> DYROS </label>
+      </group>
+      <!-- optional grouping...
+      <group>
+        <label>Subgroup</label>
+      </group>
+      -->
+      <label>DYROS TOCABI JOY Gui</label>
+      <!--icon type="file">resource/Dyros_Logo3.png</icon-->
+      <statustip>Great user interface to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>
