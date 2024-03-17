@@ -25,15 +25,42 @@ public:
 
     sensor_msgs::Joy joy_msg_;
 
-    int direction = 0;
-    float value = 0.0;
-    std::string button_name;
+    int direction_x = 0;
+    int direction_y = 0;
+    int direction_t = 0;
+    // float value = 0.0;
+    float valuex = 0.0;
+    float valuey = 0.0;
+    float valuet = 0.0;
+    float valuex_ = 0.0;
+    float valuey_ = 0.0;
+    float valuet_ = 0.0;
+
+    // std::string button_name;
+    std::string button_name_1;
+    std::string button_name_2;
+    std::string button_name_3;
+
     QTimer *timer;
+    QTimer *timer1;
+    QTimer *timer2;
+    QTimer *timer3;
+
 
 public slots:
-    virtual void arrowButtonPressed();
-    virtual void arrowButtonReleased();
+    // virtual void arrowButtonPressed();
+    // virtual void arrowButtonReleased();
+    virtual void arrowButtonPressed1();
+    virtual void arrowButtonReleased1();
+    virtual void arrowButtonPressed2();
+    virtual void arrowButtonReleased2();
+    virtual void arrowButtonPressed3();
+    virtual void arrowButtonReleased3();
+
     void updateValue();
+    void updateValue1();
+    void updateValue2();
+    void updateValue3();
     
 signals:
 
